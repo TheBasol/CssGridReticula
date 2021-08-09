@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  color: #333333;
+  font: 1.4em/1.8 "Anton", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: -webkit-linear-gradient(to right, #3c3b3f, #605c3c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c3b3f, #605c3c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contenedor{
+    padding: 1em;
+    display: grid;
+    grid-template: repeat(4,minmax(300px,1fr)) / repeat(4,minmax(170px,1fr)) ;
+    grid-gap: 0.5em;
+    grid-auto-flow: dense;
+    grid-auto-rows: dense;
+}
+  
+.elemento {
+    background-color: rgba(250, 250, 250, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    color: #004e92;
+}
+
+.elemento img{
+    border-radius: 10px;
+    object-fit:cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.elm1{
+    height: 300px;
+    grid-column: span 2;
+}
+
+.elm5{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.elm3{
+   grid-column-start: 4;
+   grid-row-start: 1;
+   grid-row-end: 3;
+}
+
+.elm7{
+    grid-row: span 2;
+}
+
+.elm8{
+    grid-column: span 3;
+    height: 300px;
+}
